@@ -14,10 +14,12 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
+out
 .idea
+*.ipr
 *.iws
 *.iml
-*.ipr
+atlassian-ide-plugin.xml
 
 ### NetBeans ###
 /nbproject/private/
