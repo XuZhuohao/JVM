@@ -12,5 +12,9 @@ public class AgentAttachApplication {
     }
     public static void agentmain(String args, Instrumentation inst) throws Exception {
         System.out.println("Args:" + args);
+        final Class[] allLoadedClasses = inst.getAllLoadedClasses();
+        for (Class allLoadedClass : allLoadedClasses) {
+            System.out.println(allLoadedClass.getName());
+        }
     }
 }
